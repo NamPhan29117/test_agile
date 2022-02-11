@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/test_agile/static/css/main.719af9ac.css",
+    "main.js": "/test_agile/static/js/main.1096893e.js",
+    "static/js/787.8ec0177d.chunk.js": "/test_agile/static/js/787.8ec0177d.chunk.js",
+    "index.html": "/test_agile/index.html",
+    "main.719af9ac.css.map": "/test_agile/static/css/main.719af9ac.css.map",
+    "main.1096893e.js.map": "/test_agile/static/js/main.1096893e.js.map",
+    "787.8ec0177d.chunk.js.map": "/test_agile/static/js/787.8ec0177d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.719af9ac.css",
+    "static/js/main.1096893e.js"
+  ]
+}
