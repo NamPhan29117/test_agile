@@ -1,0 +1,32 @@
+.side-bar {
+  width: 360px;
+  margin-right: 120px;
+  .icon {
+    height: 40px;
+    width: 34px;
+    cursor: pointer;
+  }
+  .wrap-list {
+    position: relative;
+    overflow: hidden;
+    transform: translateY(-120%);
+    transition-duration: 0.4s;
+    .list {
+      li {
+        list-style: none;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(49, 47, 47);
+        color: #fff;
+        margin-bottom: 2px;
+        padding: 10px;
+      }
+    }
+  }
+
+  .wrap-list.active {
+    transform: translateY(0%);
+  }
+}

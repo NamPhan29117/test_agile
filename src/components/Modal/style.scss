@@ -1,0 +1,35 @@
+.custom-input {
+  height: 38px;
+  margin-bottom: 8px;
+  input {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 21px;
+    border: none;
+    background-color: #83868a;
+    color: #fff;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+  }
+}
+
+.btn-sbmit {
+  height: 40px;
+  width: 80px;
+  margin-left: auto;
+  input {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 94, 39);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+}

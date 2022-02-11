@@ -6,8 +6,10 @@ interface ItemProps {
     key:string | number
 }
 
-export const Item = (props: ItemProps) => {
+const Item = (props: ItemProps) => {
     const {item} = props
+    console.log("render", item.id)
+
     return (
         <tr>
             <td>{item.id}</td>
@@ -16,3 +18,5 @@ export const Item = (props: ItemProps) => {
           </tr>
     )
 }
+
+export default React.memo(Item)

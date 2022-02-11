@@ -3,7 +3,7 @@ import React,{useState,useEffect, useMemo} from 'react'
 import { Pagination } from 'react-bootstrap';
 import { ITEM_PER_PAGE } from '../../constants';
 import { User } from '../../models';
-import './style.css'
+import './style.scss'
 
 interface PaginationProps {
     totalUser: number,
