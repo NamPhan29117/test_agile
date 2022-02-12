@@ -1,13 +1,23 @@
 .App {
   text-align: center;
   padding: 20px;
-  .container {
-    display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  .EXAMPLE_1 {
+    flex: 50%;
   }
-  .custome-table {
-    width: 600px;
-    margin: auto;
+
+  .EXAMPLE_2 {
+    flex: 50%;
   }
+}
+.custome-table {
+  width: 600px;
+  margin: auto;
 }
 
 .App-logo {
@@ -34,6 +44,16 @@
 
 .App-link {
   color: #61dafb;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .custome-table {
+    width: 100%;
+  }
 }
 
 @keyframes App-logo-spin {

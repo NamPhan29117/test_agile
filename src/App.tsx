@@ -104,10 +104,12 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <div className='EXAMPLE_2'>
+        <div className='EXAMPLE_1'>
+          <h3>Example css</h3>
           <SideBar />
         </div>
-        <div className='EXAMPLE_1'>
+        <div className='EXAMPLE_2'>
+          <h3>Example typescript</h3>
           <div className='custome-table'>
             <Table striped bordered hover>
                 <thead>
