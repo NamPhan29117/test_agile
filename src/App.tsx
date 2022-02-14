@@ -1,4 +1,4 @@
-import React,{useEffect,useReducer,useState} from 'react';
+import React,{useEffect,useReducer,useState,useCallback} from 'react';
 import userApi from './api/userApi';
 import { ListParams, User } from './models';
 import './App.scss';
@@ -85,21 +85,22 @@ function App() {
     setShow(false)
   }
 
-  const onsubmitAddUser = async(infoUser:User) =>{
-      const res = await userApi.add({
-        email: infoUser.email,
-        position:infoUser.position
-      })
+  const onsubmitAddUser = useCallback(async(infoUser:User) =>{
+    console.log(infoUser)
+    const res = await userApi.add({
+      email: infoUser.email,
+      position:infoUser.position
+    })
 
-    if(res && !isEmpty(res)){
-      dispatch({
-        type: "ADD_USER_SUCCESS",
-        payload: res
-      })
-      setIsAddSuccess(true)
-      handleClose()
-    }
+  if(res && !isEmpty(res)){
+    dispatch({
+      type: "ADD_USER_SUCCESS",
+      payload: res
+    })
+    setIsAddSuccess(true)
+    handleClose()
   }
+},[])
 
   return (
     <div className="App">

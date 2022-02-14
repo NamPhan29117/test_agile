@@ -44,3 +44,17 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+<!-- const caculator = (num) => {
+    if (num === 0) return true;
+  
+    if (num < 0) return false;
+  
+    return caculator(num - 2);
+  };
+  
+  for (let i = 0; i <= 10; i++) {
+    if (caculator(i)) {
+    }
+} -->
